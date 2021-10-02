@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 const Form = () =>{
     const [nome , setNome] = useState('');
-    const [idade, setIdade] = useState(0);
+    const [idade, setIdade] = useState("");
     const [cidade, setCidade] = useState('')
     const [infectado, setInfectado] = useState(false);
     const history = useHistory();
@@ -49,7 +49,8 @@ const Form = () =>{
                 <input type="number" required value={idade}  onChange = {(e) => setIdade(e.target.value)}></input>
                 <label htmlFor="cidade"> Cidade</label>
 
-                <select name="cidade" className="cidade" value = {cidade}  onChange = {(e) => setCidade(e.target.value)}>
+                <select name="cidade" className="cidade" required value={cidade}  onChange = {(e) => setCidade(e.target.value)}>
+                    <option value=""></option>
                     <option value="Florianópolis">Florianópolis</option>
                     <option value="Blumenau">Blumenau</option>
                     <option value="Joinville">Joinville</option>
