@@ -7,7 +7,7 @@ const Home = () =>{
     
 
     useEffect(() =>{
-        fetch('http://localhost:3002/registros')
+        fetch('http://localhost:8080/registros')
         .then((res) =>{
             return res.json()
         })
