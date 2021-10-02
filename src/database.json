@@ -36,6 +36,13 @@
       "id": 9
     },
     {
+      "nome": "Raf Silva",
+      "idade": 19,
+      "cidade": "Blumenau",
+      "infectado": false,
+      "id": 9
+    },
+    {
       "nome": "Kalleo",
       "idade": "20",
       "cidade": "Joinville",
