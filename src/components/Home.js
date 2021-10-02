@@ -3,7 +3,7 @@ import TesteInfo from './TesteInfo';
 
 const Home = () =>{
     const [data, setData] = useState(null);
-    const [filtro, setFiltro] = useState('São José');
+    const [filtro, setFiltro] = useState('Florianópolis');
     
 
     useEffect(() =>{
